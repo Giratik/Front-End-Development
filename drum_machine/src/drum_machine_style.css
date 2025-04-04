@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 24px;
+  background-color: gray;
+}
+
+h2 {
+  font-size: 28px
+}
+
+#drum-machine {
+  margin: 15px;
+  min-height: 100vh; /* Use min-height for responsiveness */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Default to column for smaller screens */
+}
+
+.wrapper {
+  display: flex; /* Change to flex container */
+  justify-content: space-evenly; /* Center content horizontally */
+  align-items: flex-start; /* Align items to the top on larger screens */
+  padding: 10px;
+  margin-top: 40px;
+  border: #000000 5px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background-image: linear-gradient(-260deg, #842bab 35%, #9ee422 100%);
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 80%; /* Make the wrapper take up most of the screen */
+  max-width: 800px; /* Limit the wrapper's maximum width */
+}
+
+.keyboard {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50%; /* Take up 40% of wrapper width*/
+  min-width: 300px; /* Minimum width so the grid doesn't collapse*/
+}
+
+.keyboard .drum-pad {
+  width: 100%;
+  height: 80px;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #f7804e;
+  transition: all .3s ease-in-out;
+}
+
+.controller {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background-color: #4fc5b9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Add a shadow for depth */
+  border-radius: 15px; /* Rounded corners */
+  color: #000000; /* Text color */
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  margin-top: 20px; /* Space between keyboard and controller */
+  width: 40%; /*Take up 40% of wrapper width*/
+  min-width: 300px; /*Minimum width so the elements don't wrap badly*/
+}
+
+.controller button {
+  border: none;
+  color: #00bef8;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #1d002e;
+}
+

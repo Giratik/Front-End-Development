@@ -1,0 +1,146 @@
+body {
+  background: linear-gradient(135deg, rgb(2, 0, 36), rgb(191, 131, 255));
+  color: rgb(166, 212, 0);
+  font-size: 20px;
+  text-align: center;
+  font-family: Orbitron, sans-serif;
+}
+
+#break-label {
+  color: rgb(0, 255, 21);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#session-label {
+  color: rgb(0, 255, 21);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#break-length {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+}
+
+#session-length {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+}
+
+#timer-label {
+  color: rgb(0, 255, 21);
+  font-size: 25px;
+  text-align: center;
+}
+
+#start_stop {
+  background-color: #ffde06;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#reset {
+  background-color: #ffde06;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+body #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+body #container h1 {
+  font-size: 50px;
+  color: rgb(247, 3, 255);
+}
+
+body #container .length-control {
+  width: 200px;
+}
+
+body #container .change {
+  margin-top: 10px;
+  width: 40px;  /* As seen on the image */
+  height: 40px; /* As seen on the image */
+  border-radius: 50%; /* To make the button circular */
+  display: flex;      /* Enable flexbox layout */
+  justify-content: center; /* Horizontally center content */
+  align-items: center;   /* Vertically center content */
+  font-size: 20px;    /* Adjust as needed */
+  /* Other styling as per your design */
+  background-color: #ffde06;
+}
+
+body #container .btn-level,
+body #container .length-control {
+  display: inline-block;
+}
+
+body #container .btn-level .btn-level:nth-child(3),
+body #container .length-control .btn-level:nth-child(3) {
+  width: 50px;
+}
+
+body #container .timer {
+  border: 7px solid #00ff00;
+  margin: 20px auto 10px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+}
+
+body #container .timer .timer-wrapper {
+  position: absolute;
+  width: 190px;
+  height: 110px;
+  left: 50%;
+  top: 50%;
+  margin-left: -95px;
+  margin-top: -57px;
+}
+
+body #container .timer #time-left {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+body #container .timer-control {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 500px) {
+  #container {
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+  }
+}
